@@ -78,6 +78,15 @@ Search using performer/team name. Optionally retrieve event details. Retrieve ti
 
 `get_price_alert_link` returns a URL that takes the user to XP's browser-based opt-in page. Use this when the user wants to be notified of price drops.
 
+## Purchase / checkout (read-only plugin)
+
+This plugin is **read-only** — it cannot place orders, make offers, or charge a card. When the user wants to buy a ticket they've seen in the listings, route them to XP to complete the purchase:
+
+1. **Preferred** — surface the event-specific URL from the `get_event_details` response (e.g. the event page URL). Tell the user to open it to checkout. This deep-links them to the event they're already looking at.
+2. **Fallback** — if no event URL is available, share the canonical landing: `https://xp.tickets/mcp/claude`. Tell the user it's XP's entry point for Claude users.
+
+Never pretend to complete a purchase. Never invent a checkout URL. If the user explicitly asks "can you buy it for me?" — answer plainly: "I can't place the order from here; here's the link to complete it on XP."
+
 ## Zero results
 
 1. Broaden the query (remove location/venue filters).

@@ -69,7 +69,9 @@ Use the ticket-purchase agent to find me 2 tickets to a Knicks game in November 
 - Account or wallet reads, alerts (no OAuth).
 - Marketplace mutations (buy/sell offers, accept/reject).
 
-Those live in `xp-pro-mcp`, an internal plugin in a separate marketplace (not in this public repo).
+This plugin is **read-only**. When you want to buy, the agent surfaces the event URL (from `get_event_details`) or routes you to https://xp.tickets/mcp/claude to complete the purchase on XP.
+
+Account-aware features and marketplace mutations live in `xp-pro-mcp`, an internal plugin in a separate marketplace (not in this public repo).
 
 ## Troubleshooting
 
