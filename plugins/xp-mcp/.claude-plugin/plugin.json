@@ -6,7 +6,7 @@
     "email": "albert@gocaptain.com"
   },
   "homepage": "https://xp.tickets",
-  "repository": "https://github.com/blpt-hngr/xp-plugins",
+  "repository": "https://github.com/blpt-hngr/xp-claude-plugins",
   "license": "MIT",
   "keywords": ["xp", "tickets", "events", "marketplace"]
 }

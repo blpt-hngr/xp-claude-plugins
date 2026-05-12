@@ -1,21 +1,21 @@
-# xp-plugins
+# xp-claude-plugins
 
 Claude Code plugin marketplace for [XP](https://xp.tickets), the fan-first ticket marketplace.
 
-This repo hosts the **`xp-plugins`** marketplace and the **`xp-mcp`** plugin — XP's public, open-world MCP surface for Claude Code. One command installs the hosted MCP server, ticketing skills, slash commands, and a ticket-purchase concierge agent.
+This repo hosts the **`xp-claude-plugins`** marketplace and the **`xp-mcp`** plugin — XP's public, open-world MCP surface for Claude Code. One command installs the hosted MCP server, ticketing skills, slash commands, and a ticket-purchase concierge agent.
 
 ## Install
 
 ```
-/plugin marketplace add blpt-hngr/xp-plugins
-/plugin install xp-mcp@xp-plugins
+/plugin marketplace add blpt-hngr/xp-claude-plugins
+/plugin install xp-mcp@xp-claude-plugins
 ```
 
 Or via the CLI:
 
 ```bash
-claude plugin marketplace add blpt-hngr/xp-plugins
-claude plugin install xp-mcp@xp-plugins
+claude plugin marketplace add blpt-hngr/xp-claude-plugins
+claude plugin install xp-mcp@xp-claude-plugins
 ```
 
 Reload Claude Code (or run `/reload-plugins`) and the plugin is live.
@@ -35,7 +35,7 @@ See `plugins/xp-mcp/README.md` for tool catalog, usage examples, and troubleshoo
 
 ```
 .claude-plugin/
-└── marketplace.json          # xp-plugins catalog
+└── marketplace.json          # xp-claude-plugins catalog
 plugins/
 └── xp-mcp/                   # the plugin
     ├── .claude-plugin/plugin.json

@@ -5,22 +5,22 @@ XP ticketing on Claude Code — the open-world surface. Public discovery (events
 ## Install
 
 ```
-/plugin marketplace add blpt-hngr/xp-plugins
-/plugin install xp-mcp@xp-plugins
+/plugin marketplace add blpt-hngr/xp-claude-plugins
+/plugin install xp-mcp@xp-claude-plugins
 ```
 
 Or via the CLI:
 
 ```bash
-claude plugin marketplace add blpt-hngr/xp-plugins
-claude plugin install xp-mcp@xp-plugins
+claude plugin marketplace add blpt-hngr/xp-claude-plugins
+claude plugin install xp-mcp@xp-claude-plugins
 ```
 
 Local testing from a clone of this repo:
 
 ```
 /plugin marketplace add ./
-/plugin install xp-mcp@xp-plugins
+/plugin install xp-mcp@xp-claude-plugins
 ```
 
 Reload after install: `/reload-plugins`.
@@ -74,8 +74,8 @@ Those live in `xp-pro-mcp`, an internal plugin in a separate marketplace (not in
 ## Troubleshooting
 
 - **Plugin missing after install** → `/reload-plugins` or restart Claude Code.
-- **MCP tools not listed** → `/mcp` to confirm `xp` server attached. If absent, check `~/.claude/plugins/cache/xp-plugins/xp-mcp/<sha>/.mcp.json`.
-- **Wrong content cached** → `claude plugin uninstall xp-mcp@xp-plugins` then `claude plugin install xp-mcp@xp-plugins`. Local-dir marketplaces don't auto-bump version on file edits.
+- **MCP tools not listed** → `/mcp` to confirm `xp` server attached. If absent, check `~/.claude/plugins/cache/xp-claude-plugins/xp-mcp/<sha>/.mcp.json`.
+- **Wrong content cached** → `claude plugin uninstall xp-mcp@xp-claude-plugins` then `claude plugin install xp-mcp@xp-claude-plugins`. Local-dir marketplaces don't auto-bump version on file edits.
 
 ## See also
 
