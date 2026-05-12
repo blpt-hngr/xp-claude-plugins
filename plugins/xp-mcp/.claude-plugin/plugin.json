@@ -1,0 +1,12 @@
+{
+  "name": "xp-mcp",
+  "description": "XP ticketing on Claude Code: hosted MCP tools, skills, commands, and a ticket-purchase agent",
+  "author": {
+    "name": "XP",
+    "email": "albert@gocaptain.com"
+  },
+  "homepage": "https://xp.tickets",
+  "repository": "https://github.com/blpt-hngr/xp-plugins",
+  "license": "MIT",
+  "keywords": ["xp", "tickets", "events", "marketplace"]
+}

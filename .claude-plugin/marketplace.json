@@ -1,0 +1,17 @@
+{
+  "name": "xp-plugins",
+  "owner": {
+    "name": "XP",
+    "email": "albert@gocaptain.com"
+  },
+  "description": "XP ticketing — MCP tools, skills, and slash commands for Claude Code",
+  "plugins": [
+    {
+      "name": "xp-mcp",
+      "source": "./plugins/xp-mcp",
+      "description": "XP marketplace MCP (open-world tools) + ticket skills, commands, and a ticket-purchase agent",
+      "category": "ticketing",
+      "keywords": ["xp", "tickets", "events", "marketplace", "mcp"]
+    }
+  ]
+}

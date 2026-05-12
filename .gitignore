@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+
+# Local Claude state
+.claude/cache/
+.claude/sessions/
+.claude/logs/
+
+# Build artifacts
+dist/
+build/
+node_modules/
