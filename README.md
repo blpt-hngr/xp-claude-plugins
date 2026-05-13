@@ -1,8 +1,6 @@
 # xp-claude-plugins
 
-Claude Code plugin marketplace for [XP](https://xp.tickets), the fan-first ticket marketplace.
-
-This repo hosts the **`xp-claude-plugins`** marketplace and the **`xp-mcp`** plugin — XP's public, open-world MCP surface for Claude Code. One command installs the hosted MCP server, ticketing skills, slash commands, and a ticket-purchase concierge agent.
+Search real tickets, compare prices, set Price Alerts, and buy directly in Claude — all in one conversation.
 
 ## About XP
 
