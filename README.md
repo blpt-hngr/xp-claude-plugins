@@ -1,8 +1,20 @@
 # xp-claude-plugins
 
-Claude Code plugin marketplace for [XP](https://xp.tickets), the fan-first ticket marketplace.
+Search real tickets, compare prices, set Price Alerts, and buy directly in Claude — all in one conversation.
 
-This repo hosts the **`xp-claude-plugins`** marketplace and the **`xp-mcp`** plugin — XP's public, open-world MCP surface for Claude Code. One command installs the hosted MCP server, ticketing skills, slash commands, and a ticket-purchase concierge agent.
+## About XP
+
+XP is the US ticket marketplace for concerts, sports, theater, and comedy. Unlike most secondary marketplaces, XP runs a **connected order book**: one search surfaces both resale listings (fan-to-fan) and primary box office inventory side by side. Real seat-level data, live pricing, no separate tabs to compare. Consumer surface: `xp.tickets`. Operator/seller tooling: `gocaptain.com`.
+
+**What makes XP different**
+
+- **Connected order book.** Resale + primary in one place.
+- **All-in pricing.** Every price includes fees by default. The number is the number.
+- **Price alerts.** Watch a section, a price ceiling, or a specific event.
+- **Quality XPerience Guarantee.** Every ticket verified; real humans (not a chatbot) resolve issues.
+- **Fan-first design.** Built by people who actually go to shows.
+
+See the `xp-context` skill for full voice guidance, catalog coverage, and marketplace glossary.
 
 ## Install
 
