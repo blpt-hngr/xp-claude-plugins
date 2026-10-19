@@ -1,5 +1,5 @@
 ---
-description: Get full details for an XP event (venue, performers, price range, alert link)
+description: Get full details for an XP event (venue, performers, price range)
 argument-hint: <event name or id>
 ---
 
@@ -11,9 +11,8 @@ Use the XP MCP `xp` server.
 2. Present:
    - Event title + date + venue name + city
    - Performers (with role if multiple)
-   - Price range (convert cents → dollars, include `$` symbol)
+   - All-in price range in dollars (include the `$` symbol)
    - Image URL if returned
-   - Price-alert URL if present
-3. If the user asks about the venue specifically (capacity, address, parking), call `get_venue_details(venue_id=<id>)` and surface that.
+3. If the user asks about the venue specifically (capacity, address, parking), call `get_venue_details(venue_id=<id>)` and surface that. For "where is section X", call `get_seat_map(event_id=<id>)`; it is the layout, not a seat view.
 
 Do not fabricate fields the tool did not return. Voice: warm, plainspoken, fan-first.
