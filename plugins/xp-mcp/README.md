@@ -82,7 +82,7 @@ Live from the server (v4.0.9). Money is dollars everywhere: `max_price_usd`, `am
 
 | Tool | What it does |
 |---|---|
-| `make_offer_on_listing` | Offer a whole-dollar price per ticket on a fan listing. The seller can accept, counter, or decline; you're charged only if they accept |
+| `make_offer_on_listing` | Offer a whole-dollar price per ticket on a fan listing. The seller can accept or decline; you're charged only if they accept |
 | `cancel_my_offer` | Pull an offer you made |
 | `get_my_bids` | Offers you've made, open or completed |
 | `list_open_listings` | Fan listings open to offers, filterable by event, performer, amount |

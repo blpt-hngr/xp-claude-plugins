@@ -93,7 +93,7 @@ Keep these separate when explaining them.
 | Action | What the person is doing | What happens |
 |---|---|---|
 | **Buy** | Buying listed tickets at the all-in price | Checkout right away; tickets locked in |
-| **Make an offer** | Naming what they'd pay for specific tickets a fan is selling | Seller can accept, counter, or decline. Charged only if the seller accepts |
+| **Make an offer** | Naming what they'd pay for specific tickets a fan is selling | Seller can accept or decline. Charged only if the seller accepts |
 | **Set your price** | Naming the price they'd go for on an event or sections, without picking specific tickets | A standing offer rests on XP and fills itself when a matching fan listing appears |
 
 ### Buy (`buy_tickets`)
