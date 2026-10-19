@@ -1,5 +1,6 @@
 {
   "name": "xp-mcp",
+  "version": "1.0.0",
   "description": "XP ticketing on Claude Code: hosted MCP tools, skills, commands, and a ticket-purchase agent",
   "author": {
     "name": "XP",
