@@ -1,6 +1,6 @@
 # xp-claude-plugins
 
-Search real tickets, compare prices, set Price Alerts, and buy directly in Claude — all in one conversation.
+Search real tickets, check all-in prices, make an offer, set your price, buy, or sell — on XP, all in one Claude conversation.
 
 ## About XP
 
@@ -10,7 +10,7 @@ XP is the US ticket marketplace for concerts, sports, theater, and comedy. Unlik
 
 - **Connected order book.** Resale + primary in one place.
 - **All-in pricing.** Every price includes fees by default. The number is the number.
-- **Price alerts.** Watch a section, a price ceiling, or a specific event.
+- **Buyers have a say.** Buy at the listed price, make an offer on tickets another fan is selling, or set your price and let it fill when tickets match.
 - **Quality XPerience Guarantee.** Every ticket verified; real humans (not a chatbot) resolve issues.
 - **Fan-first design.** Built by people who actually go to shows.
 
@@ -36,9 +36,9 @@ Reload Claude Code (or run `/reload-plugins`) and the plugin is live.
 
 | | |
 |---|---|
-| **MCP server** | `https://mcp.xp.tickets/mcp` — anonymous, 9 open-world tools: search events, venues, performers; ticket listings; price-alert links |
+| **MCP server** | `https://mcp.xp.tickets/mcp` — 40 tools: browse (no sign-in), buy, make an offer, set your price, sell, account |
 | **Skills** | `xp-context`, `xp-tickets`, `xp-ticket-verification` (auto-loaded by intent) |
-| **Slash commands** | `/xp-mcp:find-tickets`, `/xp-mcp:event-info`, `/xp-mcp:price-alert` |
+| **Slash commands** | `/xp-mcp:find-tickets`, `/xp-mcp:event-info`, `/xp-mcp:set-your-price` |
 | **Sub-agent** | `ticket-purchase` — end-to-end ticket shopping concierge |
 
 See `plugins/xp-mcp/README.md` for tool catalog, usage examples, and troubleshooting.
@@ -54,7 +54,7 @@ plugins/
     ├── .mcp.json
     ├── README.md
     ├── skills/{xp-context,xp-tickets,xp-ticket-verification}/SKILL.md
-    ├── commands/{find-tickets,event-info,price-alert}.md
+    ├── commands/{find-tickets,event-info,set-your-price}.md
     └── agents/ticket-purchase.md
 ```
 
@@ -74,11 +74,14 @@ Run from the repo root before pushing.
 
 ## Scope
 
-This repo ships **public, open-world** features only. Account-aware features (your tickets, wallet, favorites, alerts) and marketplace mutations (buy/sell offers) require XP OAuth and live in a separate internal plugin (`xp-pro-mcp`) not in this repo.
+This plugin covers the full XP MCP surface. Browsing and price checks need no account. Buying, making an offer, setting your price, selling, and account reads require signing in to XP; the server starts that flow the first time a protected tool is called.
+
+Every buy, offer, standing offer, listing, accept, and reject runs through the tool's `confirm=false` preview, is read back to the user, and only runs with `confirm=true` after an explicit yes. See https://xp.tickets/agents.
 
 ## Links
 
 - XP marketplace: https://xp.tickets
+- XP for agents: https://xp.tickets/agents
 - Operator tooling: https://gocaptain.com
 - Claude Code plugin marketplaces: https://code.claude.com/docs/en/plugin-marketplaces
 

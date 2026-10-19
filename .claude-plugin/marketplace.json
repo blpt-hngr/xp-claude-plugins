@@ -9,7 +9,7 @@
     {
       "name": "xp-mcp",
       "source": "./plugins/xp-mcp",
-      "description": "XP marketplace MCP (open-world tools) + ticket skills, commands, and a ticket-purchase agent",
+      "description": "XP marketplace MCP (browse, buy, offer, set your price, sell) + ticket skills, commands, and a ticket-purchase agent",
       "category": "ticketing",
       "keywords": ["xp", "tickets", "events", "marketplace", "mcp"]
     }

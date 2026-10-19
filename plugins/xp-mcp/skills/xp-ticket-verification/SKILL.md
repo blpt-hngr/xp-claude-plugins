@@ -10,7 +10,7 @@ When the user provides event, section, row, and seat details, validate the ticke
 ## 1. Resolve event
 
 ```
-search_events(query=<event_title>, min_similarity=0.45)
+search_events(query=<event_title>)
 ```
 
 Select the best match and obtain `event_id`. If no match found:
