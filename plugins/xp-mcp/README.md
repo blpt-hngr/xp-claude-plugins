@@ -153,6 +153,13 @@ Use the ticket-purchase agent to find me 2 tickets to a Knicks game in November 
 
 Protected tools return a sign-in error the first time; your MCP client then starts XP's OAuth flow. Claude calls the tool you asked for directly rather than checking `auth_status` first.
 
+## Data, privacy, and support
+
+The plugin bundles no code of its own: it attaches the hosted MCP server at `https://mcp.xp.tickets/mcp` and ships Markdown skills, commands, and one agent definition. Every tool call goes to that server and nowhere else. Browsing sends only your query. Signed-in tools act on your XP account under XP's OAuth. Card payments for `buy_tickets` happen on a Stripe-hosted checkout page, not inside the tool.
+
+- Privacy policy: https://xp.tickets/privacy-policy
+- Support: https://xpsupport.zendesk.com/hc/en-us/requests/new
+
 ## Troubleshooting
 
 - **Plugin missing after install** → `/reload-plugins` or restart Claude Code.

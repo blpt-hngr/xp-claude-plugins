@@ -56,13 +56,19 @@ plugins/
     ├── skills/{xp-context,xp-tickets,xp-ticket-verification}/SKILL.md
     ├── commands/{find-tickets,event-info,set-your-price}.md
     └── agents/ticket-purchase.md
+docs/
+└── registry/                 # MCP Registry server.json + publish steps
+    ├── server.json
+    └── README.md
 ```
 
 ## Versioning
 
-The plugin manifest doesn't declare a `version`, so Claude Code uses the git commit SHA. Every push to `main` is a new release — users get it on next `/plugin update` or background auto-update.
+`plugins/xp-mcp/.claude-plugin/plugin.json` declares `version` (currently `1.0.0`). Bump it on every release: the Claude plugin directory validates each commit on the tracked branch and publishes new versions by that field, and `/plugin update` picks up the bump for marketplace installs. See [plugin docs — Version resolution](https://code.claude.com/docs/en/plugin-marketplaces#version-resolution-and-release-channels).
 
-To pin an explicit release, add `version` to `plugins/xp-mcp/.claude-plugin/plugin.json` and bump on every change. See [plugin docs — Version resolution](https://code.claude.com/docs/en/plugin-marketplaces#version-resolution-and-release-channels).
+## Listing
+
+`docs/registry/` holds the official MCP Registry `server.json` and the publish steps for the registry and Smithery. The Claude plugin directory takes the plugin folder `plugins/xp-mcp` directly at https://claude.ai/directory/manage.
 
 ## Validate locally
 
@@ -83,6 +89,8 @@ Every buy, offer, standing offer, listing, accept, and reject runs through the t
 - XP marketplace: https://xp.tickets
 - XP for agents: https://xp.tickets/agents
 - Operator tooling: https://gocaptain.com
+- Privacy policy: https://xp.tickets/privacy-policy
+- Support: https://xpsupport.zendesk.com/hc/en-us/requests/new
 - Claude Code plugin marketplaces: https://code.claude.com/docs/en/plugin-marketplaces
 
 ## License

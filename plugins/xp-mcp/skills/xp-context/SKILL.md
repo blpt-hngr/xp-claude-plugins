@@ -66,7 +66,7 @@ Coverage shifts as partner relationships change. Always check live tools before 
 
 ## Marketplace glossary
 
-XP's marketplace surface uses **listing** / **offer** vocabulary. Older code paths and the analytics backend still use **swap** / **bid** for the same concepts (internal-only). The MCP tool surface accepts the preferred names exclusively.
+XP's marketplace surface uses **listing** / **offer** vocabulary. Some tool fields and results still say **swap** / **bid** for the same concepts. Speak to the user in listing / offer terms.
 
 ### Canonical mappings
 
@@ -86,6 +86,5 @@ XP's marketplace surface uses **listing** / **offer** vocabulary. Older code pat
 
 ### Notes
 
-- The MCP tool surface no longer accepts the legacy `swap_identifier` / `bid_uuid` field names; calls using them are rejected by the schema.
-- The analytics backend still validates the literal key `bid_uuid` in `action_parameters`; the MCP layer translates `offer_uuid` → `bid_uuid` internally.
-- Scope names and state-category strings are not being renamed.
+- Tool inputs take `listing_identifier` and `offer_uuid` only; the older `swap_identifier` / `bid_uuid` names are rejected.
+- Scope names and state-category strings keep the `bids` wording.

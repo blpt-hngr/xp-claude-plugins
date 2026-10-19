@@ -6,9 +6,7 @@ Everything here is prepared, nothing is submitted. Three targets:
 |---|---|---|
 | Official MCP Registry (registry.modelcontextprotocol.io) | `server.json`, remote-only | [server.json](server.json) |
 | Smithery | the server URL; optional static server card | this file, "Smithery" |
-| Anthropic directory (plugin bundle + connector) | the plugin at `plugins/xp-mcp` | [anthropic-directory-checklist.md](anthropic-directory-checklist.md) |
-
-Tool annotation state of the live server: [tool-annotations-audit.md](tool-annotations-audit.md).
+| Anthropic directory (plugin bundle + connector) | the plugin at `plugins/xp-mcp` | this file, "Anthropic directory" |
 
 ## Official MCP Registry
 
@@ -114,7 +112,7 @@ npm install -g smithery@latest
 smithery auth login
 ```
 
-Publish the URL (namespace must be one Albert's Smithery account owns; `smithery namespace list`
+Publish the URL (namespace must be one the XP Smithery account owns; `smithery namespace list`
 shows them):
 
 ```bash
@@ -161,5 +159,5 @@ get a 401 (not 403) so RFC 9728 discovery works. The server already does this.
 
 Portal: https://claude.ai/directory/manage, "Submit new". Submit twice: once as **Plugin bundle**
 pointing at `plugins/xp-mcp` in this repo, once as a **Connector** pointing at
-`https://mcp.xp.tickets/mcp`. Pass/fail for each item is in
-[anthropic-directory-checklist.md](anthropic-directory-checklist.md).
+`https://mcp.xp.tickets/mcp`. Requirements: https://claude.com/docs/plugins/pre-submission-checklist
+and https://claude.com/docs/connectors/building/review-criteria.
