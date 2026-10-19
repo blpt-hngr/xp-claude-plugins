@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "tickets.xp/xp-tickets",
+  "title": "XP Tickets",
+  "description": "Search, price, offer on, buy, and sell concert, sports, theater, and comedy tickets on XP.",
+  "version": "4.0.9",
+  "websiteUrl": "https://xp.tickets/agents",
+  "repository": {
+    "url": "https://github.com/blpt-hngr/xp-claude-plugins",
+    "source": "github",
+    "subfolder": "plugins/xp-mcp"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.xp.tickets/mcp"
+    }
+  ]
+}
