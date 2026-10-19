@@ -57,9 +57,7 @@ plugins/
     ├── commands/{find-tickets,event-info,set-your-price}.md
     └── agents/ticket-purchase.md
 docs/
-└── registry/                 # directory + MCP Registry submission files
-    ├── anthropic-directory-checklist.md
-    ├── tool-annotations-audit.md
+└── registry/                 # MCP Registry server.json + publish steps
     ├── server.json
     └── README.md
 ```
@@ -70,7 +68,7 @@ docs/
 
 ## Listing
 
-Submission files for the Claude plugin directory, the Claude connector listing, the official MCP Registry, and Smithery live in `docs/registry/`. Start with `docs/registry/README.md`.
+`docs/registry/` holds the official MCP Registry `server.json` and the publish steps for the registry and Smithery. The Claude plugin directory takes the plugin folder `plugins/xp-mcp` directly at https://claude.ai/directory/manage.
 
 ## Validate locally
 
