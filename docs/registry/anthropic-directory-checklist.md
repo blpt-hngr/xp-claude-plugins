@@ -82,8 +82,8 @@ The portal's Listing step asks for these. None exist in the repo today.
 | Description | ≤ 2,000 chars | lift from `plugins/xp-mcp/README.md` intro + "Ask before you act" |
 | Categories | 1 to 5 | Shopping / Entertainment / Marketplaces, whatever the portal offers |
 | **Documentation URL** | public, by publish date; help-center article is enough | `https://xp.tickets/agents` (live, 200) or the plugin README on GitHub |
-| **Privacy policy URL** | HTTPS; must cover collection, usage/storage, third-party sharing, retention, contact. "Missing or incomplete privacy policies result in immediate rejection." | `https://xp.tickets/privacy` returns 200. Confirm the page actually covers retention and third-party sharing, including Stripe and Privy. |
-| **Support contact** | email or URL | not in repo; `albert@gocaptain.com` is the manifest author but a shared inbox (e.g. support@xp.tickets) is better for a public listing |
+| **Privacy policy URL** | HTTPS; must cover collection, usage/storage, third-party sharing, retention, contact. "Missing or incomplete privacy policies result in immediate rejection." | `https://xp.tickets/privacy-policy` (returns 200, confirmed 2026-10-19). Confirm the page actually covers retention and third-party sharing, including Stripe and Privy. |
+| **Support contact** | email or URL | `https://xpsupport.zendesk.com/hc/en-us/requests/new` (XP support request form; returns 200 to browsers, 403 to bare curl) |
 | **Icon** | portal upload; no size stated in docs, assume square PNG ≥ 512 px | needs an XP mark; none in repo |
 | URL slug | permanent once published | `xp-tickets` |
 | Company name + website, review contact | | XP, `https://xp.tickets`, Albert |
@@ -127,7 +127,7 @@ install is worse.
 **R3. `check_listing` (C9).** Will not succeed from Claude. Hide or parameterise before the
 reviewer runs every tool.
 
-**R4. Privacy policy coverage.** `https://xp.tickets/privacy` exists; whether it names Stripe,
+**R4. Privacy policy coverage.** `https://xp.tickets/privacy-policy` exists; whether it names Stripe,
 Privy, retention periods and a contact is not checked here. Immediate-rejection item, so read it.
 
 **R5. Deprecated `_cents` params** still on three schemas. Not a rejection; a reviewer may send
